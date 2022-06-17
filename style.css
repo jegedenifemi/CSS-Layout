@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca";
+}
+header {
+  text-align: center;
+  margin-top: 5vh;
+}
+h1 a {
+  color: black;
+  text-decoration: none;
+}
+h1 a:hover {
+  color: rgb(212, 42, 42);
+  text-decoration: underline;
+}
+
+.trio-container {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  min-height: max-content;
+  padding: 5vw 9vw;
+  margin: 0 auto;
+}
+.trio {
+  padding: 8vw 3vw;
+}
+.trio h2 {
+  font-family: "Big Shoulders Display";
+  color: hsl(0, 0%, 95%);
+  margin-block: 2rem;
+}
+.trio p {
+  color: hsla(0, 0%, 100%, 0.75);
+  height: 55%;
+}
+.trio > .learnmore {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  width: 60%;
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  border-radius: 2rem;
+}
+.trio > .learnmore:hover {
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 1.5px solid hsl(0, 0%, 95%);
+  background-color: transparent;
+}
+.trio1 {
+  background-color: hsl(31, 77%, 52%);
+}
+.trio1 > .learnmore {
+  color: hsl(31, 77%, 52%);
+}
+.trio2 {
+  background-color: hsl(184, 100%, 22%);
+}
+.trio2 > .learnmore {
+  color: hsl(184, 100%, 22%);
+}
+.trio3 {
+  background-color: hsl(179, 100%, 13%);
+}
+.trio3 > .learnmore {
+  color: hsl(179, 100%, 13%);
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 820px) and (min-width: 670px) {
+  .trio-container {
+    flex-wrap: wrap;
+    padding-inline: 20vw;
+  }
+  .trio {
+    padding: 11vw 3vw;
+  }
+  .trio1 {
+    width: 50%;
+  }
+  .trio2 {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 669px) and (min-width: 375px) {
+  .trio-container {
+    flex-wrap: wrap;
+  }
+  .trio {
+    padding: 11vw 9vw 22vw;
+    width: 100%;
+  }
+}

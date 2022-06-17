@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #02052e;
+}
+header {
+  text-align: center;
+  margin-top: 5vh;
+}
+h1 a {
+  color: white;
+  text-decoration: none;
+}
+h1 a:hover {
+  color: rgb(212, 42, 42);
+  text-decoration: underline;
+}
+.container {
+  display: grid;
+  width: 40%;
+  grid-template-areas:
+    "a a b"
+    "a a b"
+    "c d d"
+    "c e e";
+  gap: 1rem;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin: 5vw auto;
+}
+.container > div {
+  padding: 2rem;
+}
+.div-a {
+  background-color: red;
+  grid-area: a;
+}
+.div-b {
+  background-color: orange;
+  grid-area: b;
+}
+.div-c {
+  background-color: green;
+  grid-area: c;
+}
+.div-d {
+  background-color: blue;
+  grid-area: d;
+}
+.div-e {
+  background-color: blue;
+  grid-area: e;
+}
