@@ -20,7 +20,7 @@ h1 a:hover {
 }
 .container {
   display: grid;
-  width: 40%;
+  width: 65%;
   grid-template-areas:
     "a a b"
     "a a b"
